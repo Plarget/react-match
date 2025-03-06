@@ -1,0 +1,56 @@
+@import "@/shared/styles/mixins.pcss";
+
+.recommendation {
+    padding-top: 42px;
+
+    &__header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    &__logo {
+        margin-right: auto;
+    }
+
+    &__loading {
+        padding-block: 50px;
+    }
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+        row-gap: 12px;
+    }
+
+    &__refresh {
+        min-width: 204px;
+
+        &-icon {
+            --icon-refresh-size: 26px;
+            width: var(--icon-refresh-size);
+            height: var(--icon-refresh-size);
+        }
+    }
+
+    &__actions {
+        display: flex;
+        column-gap: 12px;
+    }
+
+    &__error {
+        display: flex;
+        align-items: center;
+        column-gap: 10px;
+        background-color: var(--color-main);
+        padding-inline: 24px;
+        border-radius: 4px;
+
+        &-icon {
+            --icon-error-size: 28px;
+            width: var(--icon-error-size);
+            height: var(--icon-error-size);
+            color: var(--color-red);
+        }
+    }
+}
